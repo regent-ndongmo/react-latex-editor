@@ -44,3 +44,93 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+--
+# Récapitulatif **complet** 
+---
+
+## Projet : Éditeur LaTeX avec React, CodeMirror 6 et Tailwind CSS
+
+### **Objectif**
+Créer un éditeur LaTeX stylé avec React, CodeMirror 6, et un aperçu en temps réel grâce à `react-latex-next`. Le contenu est stocké en mémoire locale (pas de backend).
+
+---
+
+## **Dépendances installées**
+Voici la liste des dépendances nécessaires pour le projet :
+
+```bash
+npm install react react-dom @types/react @types/react-dom
+npm install @codemirror/view @codemirror/state @codemirror/theme-one-dark @codemirror/commands @codemirror/language
+npm install @uiw/react-codemirror
+npm install react-latex-next
+npm install -D tailwindcss postcss autoprefixer
+npm install react-router-dom
+```
+
+---
+
+## **Structure du projet**
+```
+latex-editor/
+├── src/
+│   ├── App.tsx
+│   ├── Editor.tsx
+│   ├── Home.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── ...
+├── package.json
+├── tailwind.config.js
+└── ...
+```
+
+---
+
+## **Étapes de configuration**
+
+### 1. Initialiser le projet
+```bash
+npx create-react-app latex-editor --template typescript
+cd latex-editor
+```
+
+### 2. Installer les dépendances
+```bash
+npm install @codemirror/view @codemirror/state @codemirror/theme-one-dark @codemirror/commands @codemirror/language
+npm install @uiw/react-codemirror
+npm install react-latex-next
+npm install -D tailwindcss postcss autoprefixer
+npm install react-router-dom
+```
+
+### 3. Configurer Tailwind CSS
+```bash
+npx tailwindcss init
+```
+
+### 4. Lancer l'application
+```bash
+npm start
+```
+
+---
+
+## **Fonctionnalités implémentées**
+- Éditeur LaTeX avec CodeMirror 6.
+- Aperçu en temps réel avec `react-latex-next`.
+- Barre latérale avec boutons fictifs.
+- Routage avec React Router.
+- Style avec Tailwind CSS.
+
+---
+
+## **Prochaines étapes possibles**
+- Ajouter un bouton pour exporter le rendu en PDF.
+- Sauvegarder le contenu dans le `localStorage`.
+- Ajouter une gestion de projets locaux.
+
+---
+
+**Bon développement !** 
